@@ -18,27 +18,6 @@
     <meta name="geo.position" content="26.1209;85.3647" />
     <meta name="ICBM" content="26.1209, 85.3647" />
 
-    <!-- JSON-LD SCHEMA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "PhotographyBusiness",
-      "name": "Flute Studio",
-      "image": "https://lh3.googleusercontent.com/d/1QLvb_keNczNNot6py6Le7cWEM7m6j_n0=w1000",
-      "@id": "https://flutestudio.in/",
-      "url": "https://flutestudio.in/",
-      "telephone": "+917543907502",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Muzaffarpur",
-        "addressLocality": "Muzaffarpur",
-        "addressRegion": "BR",
-        "postalCode": "842001",
-        "addressCountry": "IN"
-      }
-    }
-    </script>
-
     <!-- Elite Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@100;300;400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
@@ -50,10 +29,11 @@
     <style>
         :root {
             --gold: #C5A059;
-            --black: #080808;
-            --deep-obsidian: #030303;
+            --black: #000000;
+            --deep-obsidian: #050505;
             --white: #ffffff;
             --border: rgba(197, 160, 89, 0.15);
+            --text-grey: #888888;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -82,7 +62,7 @@
             position: fixed; top: 0; width: 100%; padding: 25px 5%;
             display: flex; justify-content: space-between; align-items: center;
             z-index: 1000; transition: 0.5s ease;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
         }
         nav.scrolled {
             padding: 15px 5%; background: rgba(8, 8, 8, 0.98); 
@@ -90,38 +70,72 @@
         }
         .nav-logo a { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: 1px; }
         .nav-logo span { color: var(--gold); }
-        .nav-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; margin-left: 30px; transition: 0.3s; }
+        .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; margin-left: 30px; transition: 0.3s; }
         .nav-links a:hover { color: var(--gold); }
 
-        /* --- MINIMAL HERO --- */
-        .hero { height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; text-align: center; }
-        .hero-bg { position: absolute; inset: 0; z-index: -1; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.85)), url('https://lh3.googleusercontent.com/d/1QLvb_keNczNNot6py6Le7cWEM7m6j_n0=w1600') center/cover; animation: slowZoom 30s infinite alternate; }
-        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.1); } }
+        /* --- PREMIUM HERO (AUTO SLIDER) --- */
+        .hero { height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; text-align: center; background: #000; }
         
-        .hero-text h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); color: var(--white); margin-bottom: 5px; font-weight: 400; letter-spacing: -1px; }
-        .hero-text p { font-size: 0.65rem; letter-spacing: 10px; color: var(--gold); text-transform: uppercase; margin-bottom: 35px; opacity: 0.8; }
+        .slider-container { position: absolute; inset: 0; z-index: 0; }
+        
+        .slide {
+            position: absolute; inset: 0;
+            background-size: cover; background-position: center;
+            opacity: 0;
+            animation: kenBurns 18s infinite;
+        }
+        
+        /* Slide Images */
+        /* Slide 1: Your Original Image */
+        .slide:nth-child(1) { animation-delay: 0s; background-image: url('https://drive.google.com/uc?export=view&id=1bhiS6JoGr5BXA6bMAIlQhTio_FgEmYqy" alt="Your Image" />'); }
+        /* Slide 2: Luxury Dark Wedding Stock */
+        .slide:nth-child(2) { animation-delay: 6s; background-image: url('https://images.unsplash.com/photo-1511285560982-1356c11d4606?q=80&w=2076&auto=format&fit=crop'); }
+        /* Slide 3: Cinematic Vibes Stock */
+        .slide:nth-child(3) { animation-delay: 12s; background-image: url('https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070&auto=format&fit=crop'); }
+
+        @keyframes kenBurns {
+            0% { opacity: 0; transform: scale(1); }
+            5% { opacity: 1; }
+            38% { opacity: 1; }
+            43% { opacity: 0; transform: scale(1.1); }
+            100% { opacity: 0; }
+        }
+
+        .hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: 1; }
+        
+        .hero-text { position: relative; z-index: 2; padding: 0 20px; }
+        .hero-text h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); color: var(--white); margin-bottom: 5px; font-weight: 400; letter-spacing: -1px; text-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+        .hero-text p { font-size: 0.65rem; letter-spacing: 10px; color: var(--gold); text-transform: uppercase; margin-bottom: 35px; opacity: 0.9; }
         
         .btn-minimal {
             padding: 15px 40px; border: 1px solid var(--gold); color: var(--white); text-decoration: none; font-size: 0.6rem; 
-            letter-spacing: 4px; text-transform: uppercase; transition: 0.5s; background: transparent;
+            letter-spacing: 4px; text-transform: uppercase; transition: 0.5s; background: rgba(0,0,0,0.3); display: inline-block;
         }
         .btn-minimal:hover { background: var(--gold); color: var(--black); }
 
         /* --- ARTIST SECTION --- */
         .artist-profile { padding: 80px 10%; display: flex; align-items: center; justify-content: center; background: var(--deep-obsidian); text-align: center; }
-        .artist-inner { max-width: 700px; }
-        .artist-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--gold); padding: 3px; }
+        .artist-inner { max-width: 700px; display: flex; flex-direction: column; align-items: center; }
+        
+        .artist-img { 
+            width: 150px; height: 150px; border-radius: 50%; object-fit: cover; 
+            margin-bottom: 20px; border: 2px solid var(--gold); padding: 3px; 
+        }
+        
         .artist-inner blockquote { font-family: 'Playfair Display', serif; font-size: 1.6rem; line-height: 1.3; margin-bottom: 20px; font-style: italic; color: #eee; }
         .artist-signature { font-family: 'Cinzel', serif; font-size: 0.75rem; color: var(--gold); letter-spacing: 4px; text-transform: uppercase; }
 
-        /* --- VIDEO SHOWCASE (PREMIUM STYLE) --- */
+        /* --- VIDEO SHOWCASE (HTML5 PLAYER) --- */
         .video-showcase { padding: 40px 5% 80px; background: var(--deep-obsidian); text-align: center; }
         .video-container { 
             max-width: 1000px; margin: 0 auto; position: relative; 
             padding-bottom: 56.25%; height: 0; overflow: hidden; 
             border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            background: #000;
         }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .video-container video {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+        }
 
         /* --- SERVICES LIST --- */
         .services-section { padding: 100px 8%; background: var(--black); }
@@ -138,36 +152,16 @@
         .s-link { color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem; border-bottom: 1px solid transparent; transition: 0.3s; cursor: pointer; }
         .service-card:hover .s-link { border-bottom: 1px solid var(--gold); }
 
-        /* --- GALLERY: PINTEREST STYLE COLUMNS (NO CROP) --- */
+        /* --- GALLERY --- */
         .grand-gallery { padding: 100px 5%; background: var(--black); }
         .curation-header { margin-bottom: 60px; text-align: center; }
         .curation-header h4 { color: var(--gold); letter-spacing: 6px; text-transform: uppercase; font-size: 0.7rem; margin-bottom: 15px; }
         .curation-header h2 { font-size: 3.2rem; }
 
-        /* NEW CSS COLUMNS LAYOUT - SOLVES CROPPING */
-        .pinterest-grid {
-            column-count: 4;
-            column-gap: 15px;
-        }
-        .pin-item {
-            break-inside: avoid;
-            margin-bottom: 15px;
-            position: relative;
-            border-radius: 2px;
-            overflow: hidden;
-            background: #111;
-        }
-        .pin-item img {
-            width: 100%;
-            height: auto !important; /* Forces image to keep ratio */
-            display: block;
-            transition: transform 0.6s ease, filter 0.6s ease;
-            filter: grayscale(20%);
-        }
-        .pin-item:hover img {
-            transform: scale(1.05);
-            filter: grayscale(0%);
-        }
+        .pinterest-grid { column-count: 4; column-gap: 15px; }
+        .pin-item { break-inside: avoid; margin-bottom: 15px; position: relative; border-radius: 2px; overflow: hidden; background: #111; }
+        .pin-item img { width: 100%; height: auto !important; display: block; transition: transform 0.6s ease, filter 0.6s ease; filter: grayscale(20%); }
+        .pin-item:hover img { transform: scale(1.05); filter: grayscale(0%); }
 
         /* --- REVIEWS --- */
         .kind-words { padding: 120px 10%; background: #0c0c0c; text-align: center; }
@@ -179,11 +173,23 @@
         .grand-footer { background: #050505; padding: 100px 8% 50px; border-top: 1px solid var(--border); }
         .f-container { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px; }
         .f-brand h2 { color: var(--gold); font-family: 'Cinzel'; font-size: 1.6rem; margin-bottom: 25px; }
+        
+        .f-brand p { 
+            color: var(--text-grey); 
+            font-size: 0.9rem; 
+            line-height: 1.8;
+            max-width: 320px;
+        }
+
         .f-socials a { color: var(--white); margin-right: 25px; opacity: 0.4; transition: 0.3s; font-size: 1.2rem; }
         .f-socials a:hover { opacity: 1; color: var(--gold); }
         .f-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 30px; }
-        .f-links { list-style: none; color: #666; font-size: 0.85rem; }
-        .f-links li { margin-bottom: 12px; transition: 0.3s; cursor: pointer; }
+        .f-links { list-style: none; color: var(--text-grey); font-size: 0.85rem; }
+        .f-links li { margin-bottom: 12px; }
+        
+        .f-links a { color: var(--text-grey); text-decoration: none; transition: 0.3s; display: inline-block; }
+        .f-links a:hover { color: var(--gold); transform: translateX(5px); }
+
         .footer-bottom { border-top: 1px solid #111; padding-top: 40px; display: flex; justify-content: space-between; align-items: center; color: #444; font-size: 0.7rem; letter-spacing: 2px; }
 
         .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
@@ -197,6 +203,7 @@
             .nav-links { display: none; }
             .pinterest-grid { column-count: 2; }
             .f-container { grid-template-columns: 1fr; text-align: center; }
+            .f-brand p { margin: 0 auto; }
             .sec-header h2 { font-size: 2.2rem; }
             .hero-text h1 { font-size: 2.2rem; }
         }
@@ -223,9 +230,19 @@
         </div>
     </nav>
 
-    <!-- Sleek Minimal Hero -->
+    <!-- NEW HERO: Auto-Sliding Premium Images -->
     <section class="hero">
-        <div class="hero-bg"></div>
+        <div class="slider-container">
+            <!-- Slide 1: Your Original Couple -->
+            <div class="slide"></div>
+            <!-- Slide 2: Cinematic Indian Wedding -->
+            <div class="slide"></div>
+            <!-- Slide 3: Luxury Details -->
+            <div class="slide"></div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+
         <div class="hero-text" data-aos="fade-up" data-aos-duration="2000">
             <p>Based in Muzaffarpur • Bihar</p>
             <h1>Artistry in Every Frame.</h1>
@@ -234,39 +251,40 @@
     </section>
 
    <!-- Artist -->
-<section class="artist-profile" id="vision">
-    <div class="artist-inner" data-aos="fade-up">
+    <section class="artist-profile" id="vision">
+        <div class="artist-inner" data-aos="fade-up">
 
-        <!-- Owner Photo (full visible, no crop) -->
-        <img 
-            src="https://lh3.googleusercontent.com/d/1rG6GMZG2yVC6VbWDU0DjnzDSmO7q5fds=w1200"
-            alt="Manish - Lead Visionary at Flute Studio Muzaffarpur Bihar"
-            class="artist-img"
-            style="width:100%; height:auto; object-fit:contain;"
-            loading="lazy"
-        >
+            <!-- Owner Photo (Corrected Size & Centered) -->
+            <img 
+                src="https://lh3.googleusercontent.com/d/1rG6GMZG2yVC6VbWDU0DjnzDSmO7q5fds=w1200"
+                alt="Manish - Lead Visionary at Flute Studio Muzaffarpur Bihar"
+                class="artist-img"
+                loading="lazy"
+            >
 
-        <blockquote>
-            "Capturing the legacy of your soul, one shutter at a time."
-        </blockquote>
+            <blockquote>
+                "Capturing the legacy of your soul, one shutter at a time."
+            </blockquote>
 
-        <div class="artist-signature">
-            Manish — Flute Studio
+            <div class="artist-signature">
+                Manish — Flute Studio
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-
-    <!-- Video Showcase (PREMIUM STYLE RESTORED) -->
+    <!-- Video Showcase (HTML5 VIDEO TAG) -->
     <section class="video-showcase">
         <div class="sec-header" data-aos="fade-up">
             <h4>Cinematic Experience</h4>
             <h2>Wedding Films</h2>
         </div>
         <div class="video-container" data-aos="zoom-in">
-            <!-- Replace this URL with your actual YouTube Video embed URL -->
-            <iframe width="100%" height="100%" src="https://drive.google.com/file/d/1YJ--U6IHbH2-F700JjggpsqCx8zdyfNd/view" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Replace 'src' with client video later -->
+            <video controls poster="https://lh3.googleusercontent.com/d/1QLvb_keNczNNot6py6Le7cWEM7m6j_n0=w1600">
+                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
 
@@ -287,31 +305,31 @@
                 <i class="fas fa-film s-icon"></i>
                 <h3>Cinematic Films</h3>
                 <p>Premier wedding cinematography in Muzaffarpur. 4K cinematic films with professional storytelling, color grading, and heartfelt audio narratives.</p>
-                <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio,%20I%20am%20interested%20in%20Cinematic%20Wedding%20Films.%20Please%20share%20details." class="s-link">Get Film Quote</a>
+                <a href="https://wa.me/917543907502" class="s-link">Get Film Quote</a>
             </div>
             <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-heart s-icon"></i>
                 <h3>Pre-Wedding Shoots</h3>
                 <p>Capturing your romance at Bihar’s most scenic locations. Creative pre-wedding sessions in Patna and Muzaffarpur tailored to your story.</p>
-                <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio,%20I%20want%20to%20plan%20a%20Pre-Wedding%20Shoot%20in%20Bihar." class="s-link">Plan Your Shoot</a>
+                <a href="https://wa.me/917543907502" class="s-link">Plan Your Shoot</a>
             </div>
             <div class="service-card" data-aos="fade-up">
                 <i class="fas fa-plane-departure s-icon"></i>
                 <h3>Destination Weddings</h3>
                 <p>Traveling across India and globally. From Udaipur palaces to Goa beaches, we bring our elite lens to your destination wedding.</p>
-                <a href="https://wa.me/917543907502?text=Hi,%20I%20am%20looking%20for%20a%20Destination%20Wedding%20Photographer." class="s-link">Inquire Now</a>
+                <a href="https://wa.me/917543907502" class="s-link">Inquire Now</a>
             </div>
             <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-book-open s-icon"></i>
                 <h3>Heirloom Albums</h3>
                 <p>Preserve your memories in hand-crafted premium albums. Italian leather and high-quality printing for a legacy that lasts generations.</p>
-                <a href="https://wa.me/917543907502?text=Hi,%20I%20would%20like%20to%20know%20more%20about%20your%20Premium%20Wedding%20Albums." class="s-link">View Designs</a>
+                <a href="https://wa.me/917543907502" class="s-link">View Designs</a>
             </div>
             <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-gem s-icon"></i>
                 <h3>Fashion & Editorial</h3>
                 <p>High-fashion bridal portraits and commercial shoots in Bihar. Magazine-quality imagery for brands, influencers, and bridal couture.</p>
-                <a href="https://wa.me/917543907502?text=Hi,%20I%20am%20interested%20in%20a%20Fashion/Editorial%20Shoot." class="s-link">Work With Us</a>
+                <a href="https://wa.me/917543907502" class="s-link">Work With Us</a>
             </div>
         </div>
     </section>
@@ -323,7 +341,6 @@
             <h2>Selected Works</h2>
         </div>
         
-        <!-- Pinterest Style Grid (Columns) -->
         <div class="pinterest-grid">
             <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1QLvb_keNczNNot6py6Le7cWEM7m6j_n0=w1000" loading="lazy"></div>
 <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/15w_-kd9q5apdP8D9qLVQN0TpBB7TGcTR=w1000" loading="lazy"></div>
@@ -388,16 +405,16 @@
             <div class="f-col">
                 <h4 class="f-title">Information</h4>
                 <ul class="f-links">
-                    <li>The Vision</li>
-                    <li>Portfolio</li>
+                    <li><a href="#vision">The Vision</a></li>
+                    <li><a href="#gallery">Portfolio</a></li>
                 </ul>
             </div>
             <div class="f-col">
                 <h4 class="f-title">Contact</h4>
                 <ul class="f-links">
-                    <li>+91 75439 07502</li>
-                    <li>+91 82100 62234</li>
-                    <li>flutestudioof90@gmail.com</li>
+                    <li><a href="tel:+917543907502">+91 75439 07502</a></li>
+                    <li><a href="tel:+918210062234">+91 82100 62234</a></li>
+                    <li><a href="mailto:flutestudioof90@gmail.com">flutestudioof90@gmail.com</a></li>
                 </ul>
             </div>
         </div>
@@ -406,12 +423,6 @@
             <p style="font-family: 'Playfair Display'; font-style: italic; color: var(--gold); font-size: 1rem;">Legacy In Every Frame</p>
         </div>
     </footer>
-
-    <!-- Hidden SEO Content -->
-    <div class="seo-hidden">
-        <h2>Expert Wedding Photography in Muzaffarpur and Patna</h2>
-        <p>Looking for the best marriage photographer in Bihar? Flute Studio is a top-rated studio in Muzaffarpur offering premium wedding cinematography, candid photoshoots, and pre-wedding films. We serve all areas including Muzaffarpur Town, Patna, Darbhanga, Samastipur, Motihari, and Sitamarhi. Our team provides professional high-quality 4K cinematic wedding trailers and luxury bridal albums at competitive prices.</p>
-    </div>
 
     <!-- WhatsApp -->
     <a href="https://wa.me/917543907502" class="wa-float">
