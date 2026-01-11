@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ADVANCED SEO STACK -->
+    <title>Flute Studio | Best Wedding Photographer in Muzaffarpur & Bihar</title>
+    <meta name="description" content="Flute Studio is the premier luxury wedding photographer and cinematographer in Muzaffarpur. Specialized in candid photography and cinematic films across Patna, Bihar, and India.">
+    <meta name="keywords" content="Best wedding photographer in Muzaffarpur, Wedding photography Bihar, Cinematic wedding films Muzaffarpur, Pre-wedding photographer Patna, Candid photography Darbhanga, Flute Studio Muzaffarpur, Wedding cinematographer Bihar, Motihari wedding photography, Sitamarhi wedding photographer, Samastipur marriage photographer">
+    <meta name="author" content="Flute Studio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://flutestudio.in/">
+
+    <!-- BIHAR GEO SEO -->
+    <meta name="geo.region" content="IN-BR" />
+    <meta name="geo.placename" content="Muzaffarpur" />
+    <meta name="geo.position" content="26.1209;85.3647" />
+    <meta name="ICBM" content="26.1209, 85.3647" />
+
+    <!-- JSON-LD SCHEMA (GOOGLE RANKING) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PhotographyBusiness",
+      "name": "Flute Studio",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000",
+      "@id": "https://flutestudio.in/",
+      "url": "https://flutestudio.in/",
+      "telephone": "+917543907502",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Muzaffarpur",
+        "addressLocality": "Muzaffarpur",
+        "addressRegion": "BR",
+        "postalCode": "842001",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/flutestudio__/",
+        "https://www.facebook.com/flutestudiof90/",
+        "https://www.youtube.com/@flutestudio9284"
+      ]
+    }
+    </script>
+
+    <!-- Elite Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@100;300;400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --gold: #C5A059;
+            --black: #080808;
+            --deep-obsidian: #030303;
+            --white: #ffffff;
+            --border: rgba(197, 160, 89, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background: var(--black); color: var(--white); font-family: 'Inter', sans-serif; overflow-x: hidden; line-height: 1.6; }
+
+        h1, h2, h3, h4, .serif { font-family: 'Playfair Display', serif; font-weight: 400; }
+        .cinzel { font-family: 'Cinzel', serif; letter-spacing: 4px; }
+
+        /* --- MAGIC CINEMATIC INTRO --- */
+        #intro-shutter {
+            position: fixed; inset: 0; background: var(--deep-obsidian); z-index: 10000;
+            display: flex; align-items: center; justify-content: center;
+            transition: transform 1.5s cubic-bezier(0.85, 0, 0.15, 1);
+        }
+        .shutter-content { text-align: center; }
+        .shutter-content h1 { 
+            font-size: 1.2rem; letter-spacing: 15px; color: var(--gold); 
+            text-transform: uppercase; border-bottom: 1px solid var(--gold); 
+            padding-bottom: 15px; margin-bottom: 10px;
+        }
+        .shutter-content p { color: #555; letter-spacing: 8px; font-size: 0.6rem; text-transform: uppercase; }
+
+        /* --- HEADER --- */
+        nav {
+            position: fixed; top: 0; width: 100%; padding: 25px 5%;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; transition: 0.5s ease;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+        }
+        nav.scrolled {
+            padding: 15px 5%; background: rgba(8, 8, 8, 0.98); 
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-logo a { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: 1px; }
+        .nav-logo span { color: var(--gold); }
+        .nav-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; margin-left: 30px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* --- MINIMAL HERO --- */
+        .hero { height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; text-align: center; }
+        .hero-bg { position: absolute; inset: 0; z-index: -1; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070') center/cover; animation: slowZoom 30s infinite alternate; }
+        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.1); } }
+        
+        .hero-text h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); color: var(--white); margin-bottom: 5px; font-weight: 400; letter-spacing: -1px; }
+        .hero-text p { font-size: 0.65rem; letter-spacing: 10px; color: var(--gold); text-transform: uppercase; margin-bottom: 35px; opacity: 0.8; }
+        
+        .btn-minimal {
+            padding: 15px 40px; border: 1px solid var(--gold); color: var(--white); text-decoration: none; font-size: 0.6rem; 
+            letter-spacing: 4px; text-transform: uppercase; transition: 0.5s; background: transparent;
+        }
+        .btn-minimal:hover { background: var(--gold); color: var(--black); }
+
+        /* --- ARTIST SECTION --- */
+        .artist-profile { padding: 80px 10%; display: flex; align-items: center; justify-content: center; background: var(--deep-obsidian); text-align: center; }
+        .artist-inner { max-width: 700px; }
+        .artist-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--gold); padding: 3px; }
+        .artist-inner blockquote { font-family: 'Playfair Display', serif; font-size: 1.6rem; line-height: 1.3; margin-bottom: 20px; font-style: italic; color: #eee; }
+        .artist-signature { font-family: 'Cinzel', serif; font-size: 0.75rem; color: var(--gold); letter-spacing: 4px; text-transform: uppercase; }
+
+        /* --- VIDEO SHOWCASE --- */
+        .video-showcase { padding: 40px 5% 80px; background: var(--deep-obsidian); text-align: center; }
+        .video-container { 
+            max-width: 1000px; margin: 0 auto; position: relative; 
+            padding-bottom: 56.25%; height: 0; overflow: hidden; 
+            border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        /* --- FULL SERVICES LIST (6-GRID RESTORED) --- */
+        .services-section { padding: 100px 8%; background: var(--black); }
+        .sec-header { text-align: center; margin-bottom: 70px; }
+        .sec-header h4 { color: var(--gold); letter-spacing: 6px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 15px; }
+        .sec-header h2 { font-size: 2.8rem; color: white; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        .service-card { background: #0f0f0f; padding: 50px 30px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.03); transition: all 0.4s ease; position: relative; }
+        .service-card:hover { transform: translateY(-10px); border-color: var(--gold); }
+        .s-icon { font-size: 2.2rem; color: var(--gold); margin-bottom: 25px; opacity: 0.8; }
+        .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; margin-bottom: 20px; color: white; }
+        .service-card p { color: #888; font-size: 0.9rem; margin-bottom: 30px; line-height: 1.8; }
+        .s-link { color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem; border-bottom: 1px solid transparent; transition: 0.3s; cursor: pointer; }
+        .service-card:hover .s-link { border-bottom: 1px solid var(--gold); }
+
+        /* --- GRAND GALLERY (25 PHOTOS) --- */
+        .grand-gallery { padding: 100px 5%; background: var(--black); }
+        .curation-header { margin-bottom: 80px; text-align: center; }
+        .curation-header h4 { color: var(--gold); letter-spacing: 6px; text-transform: uppercase; font-size: 0.7rem; margin-bottom: 15px; }
+        .curation-header h2 { font-size: 3.2rem; }
+
+        .masonry-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 240px; gap: 15px; }
+        .grid-item { position: relative; overflow: hidden; background: #111; }
+        .grid-item img { width: 100%; height: 100%; object-fit: cover; transition: 1.5s ease; filter: grayscale(15%); }
+        .grid-item:hover img { transform: scale(1.08); filter: grayscale(0%); }
+        .span-v { grid-row: span 2; }
+        .span-h { grid-column: span 2; }
+        .span-big { grid-column: span 2; grid-row: span 2; }
+
+        /* --- REVIEWS --- */
+        .kind-words { padding: 120px 10%; background: #0c0c0c; text-align: center; }
+        .word-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 50px; margin-top: 60px; }
+        .word-card p { font-style: italic; color: #bbb; font-size: 1.1rem; margin-bottom: 20px; font-family: 'Playfair Display'; }
+        .word-card h4 { font-size: 0.75rem; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; }
+
+        /* --- FOOTER --- */
+        .grand-footer { background: #050505; padding: 100px 8% 50px; border-top: 1px solid var(--border); }
+        .f-container { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px; }
+        .f-brand h2 { color: var(--gold); font-family: 'Cinzel'; font-size: 1.6rem; margin-bottom: 25px; }
+        .f-socials a { color: var(--white); margin-right: 25px; opacity: 0.4; transition: 0.3s; font-size: 1.2rem; }
+        .f-socials a:hover { opacity: 1; color: var(--gold); }
+        .f-title { font-family: 'Cinzel', serif; color: var(--gold); font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 30px; }
+        .f-links { list-style: none; color: #666; font-size: 0.85rem; }
+        .f-links li { margin-bottom: 12px; transition: 0.3s; cursor: pointer; }
+        .footer-bottom { border-top: 1px solid #111; padding-top: 40px; display: flex; justify-content: space-between; align-items: center; color: #444; font-size: 0.7rem; letter-spacing: 2px; }
+
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .seo-hidden { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+
+        @media (max-width: 1024px) { 
+            .f-container { grid-template-columns: 1fr 1fr; }
+            .masonry-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 768px) { 
+            .nav-links { display: none; }
+            .masonry-grid { grid-template-columns: repeat(2, 1fr); } 
+            .f-container { grid-template-columns: 1fr; text-align: center; }
+            .sec-header h2 { font-size: 2.2rem; }
+            .hero-text h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Intro -->
+    <div id="intro-shutter">
+        <div class="shutter-content">
+            <h1>Flute Studio</h1>
+            <p>Muzaffarpur • Bihar • Worldwide</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo"><a href="/">FLUTE <span>STUDIO</span></a></div>
+        <div class="nav-links">
+            <a href="#gallery">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#vision">The Artist</a>
+            <a href="https://wa.me/917543907502">Reserve</a>
+        </div>
+    </nav>
+
+    <!-- Sleek Minimal Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="2000">
+            <p>Based in Muzaffarpur • Bihar</p>
+            <h1>Artistry in Every Frame.</h1>
+            <a href="https://wa.me/917543907502" class="btn-minimal">Reserve Your Date</a>
+        </div>
+    </section>
+
+    <!-- Artist -->
+    <section class="artist-profile" id="vision">
+        <div class="artist-inner" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974" alt="Ankit - Lead Visionary at Flute Studio Muzaffarpur Bihar" class="artist-img">
+            <blockquote>"Capturing the legacy of your soul, one shutter at a time."</blockquote>
+            <div class="artist-signature">Ankit — Flute Studio</div>
+        </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <section class="video-showcase">
+        <div class="video-container" data-aos="zoom-in">
+            <iframe src="https://www.youtube.com/embed/S265_i5iLps" title="Flute Studio Wedding Cinematography Bihar" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- RESTORED 6-GRID SERVICES LIST -->
+    <section class="services-section" id="services">
+        <div class="sec-header" data-aos="fade-up">
+            <h4>Exquisite Offerings</h4>
+            <h2>Our Specialized Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <i class="fas fa-camera-retro s-icon"></i>
+                <h3>Wedding Photography</h3>
+                <p>High-end candid and traditional wedding photography in Muzaffarpur. We frame the raw emotions and grand moments of your special day across Bihar.</p>
+                <a href="#gallery" class="s-link">Explore Gallery</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-film s-icon"></i>
+                <h3>Cinematic Films</h3>
+                <p>Premier wedding cinematography in Muzaffarpur. 4K cinematic films with professional storytelling, color grading, and heartfelt audio narratives.</p>
+                <a href="https://wa.me/917543907502" class="s-link">Request Trailer</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-heart s-icon"></i>
+                <h3>Pre-Wedding Shoots</h3>
+                <p>Capturing your romance at Bihar’s most scenic locations. Creative pre-wedding sessions in Patna and Muzaffarpur tailored to your story.</p>
+                <a href="https://wa.me/917543907502" class="s-link">Plan Your Shoot</a>
+            </div>
+            <div class="service-card" data-aos="fade-up">
+                <i class="fas fa-plane-departure s-icon"></i>
+                <h3>Destination Weddings</h3>
+                <p>Traveling across India and globally. From Udaipur palaces to Goa beaches, we bring our elite lens to your destination wedding.</p>
+                <a href="https://wa.me/917543907502" class="s-link">Inquire Now</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-book-open s-icon"></i>
+                <h3>Heirloom Albums</h3>
+                <p>Preserve your memories in hand-crafted premium albums. Italian leather and high-quality printing for a legacy that lasts generations.</p>
+                <a href="https://wa.me/917543907502" class="s-link">View Designs</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-gem s-icon"></i>
+                <h3>Fashion & Editorial</h3>
+                <p>High-fashion bridal portraits and commercial shoots in Bihar. Magazine-quality imagery for brands, influencers, and bridal couture.</p>
+                <a href="https://wa.me/917543907502" class="s-link">Work With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY (25 PHOTOS) -->
+    <section class="grand-gallery" id="gallery">
+        <div class="curation-header" data-aos="fade-up">
+            <h4>The Portfolio</h4>
+            <h2>Selected Works</h2>
+        </div>
+        <div class="masonry-grid">
+            <div class="grid-item span-big" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000" alt="Candid Wedding Photography Muzaffarpur Bihar - Flute Studio"></div>
+            <div class="grid-item span-v" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000" alt="Bridal Portrait Bihar Wedding"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1000" alt="Best Marriage Photographer Darbhanga"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1522673607200-1648832cee98?q=80&w=1000" alt="Wedding Cinematography Bihar India"></div>
+            <div class="grid-item span-h" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1544077960-604201fe74bc?q=80&w=1000" alt="Pre-wedding Photographer Patna Bihar"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1000" alt="Indian Wedding Rituals Muzaffarpur"></div>
+            <div class="grid-item span-v" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=1000" alt="Flute Studio Cinematic Film Stills"></div>
+            <div class="grid-item span-h" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?q=80&w=1000" alt="Luxury Bridal Couture Bihar"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1000" alt="Traditional Marriage Photography Sitamarhi"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1510076857177-74700760be15?q=80&w=1000" alt="Wedding Photographer Motihari"></div>
+            <div class="grid-item span-h" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1465495910483-0d674115f97d?q=80&w=1000" alt="Destination Wedding Bihar Service"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=1000" alt="Candid Moments Wedding India"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1513273159383-c021113d11e5?q=80&w=1000" alt="Bridal Lehanga Photography Bihar"></div>
+            <div class="grid-item span-v" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1519225495810-758b63300051?q=80&w=1000" alt="Creative Wedding Art Muzaffarpur"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1000" alt="Professional Photographer Samastipur"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1521478706270-f2e33c203d95?q=80&w=1000" alt="Best Pre-wedding Location Bihar"></div>
+            <div class="grid-item span-h" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=1000" alt="Couple Portrait Patna"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?q=80&w=1000" alt="Hindu Marriage Ceremony Photography"></div>
+            <div class="grid-item span-v" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1595152230621-25a2789f2a08?q=80&w=1000" alt="Cinematic Reels Flute Studio"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c62?q=80&w=1000" alt="Bihar Wedding Storyteller"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1510076857177-74700760be15?q=80&w=1000" alt="Top Studio Muzaffarpur"></div>
+            <div class="grid-item span-h" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1529636798458-92182e662485?q=80&w=1000" alt="Bihari Bridal Photography"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?q=80&w=1000" alt="Groom Preparation Shoot"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?q=80&w=1000" alt="Haldi Function Bihar"></div>
+            <div class="grid-item" data-aos="zoom-in"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000" alt="Candid Smile Bride Portfolio"></div>
+        </div>
+    </section>
+
+    <!-- Kind Words -->
+    <section class="kind-words">
+        <h4>The Experience</h4>
+        <h2 class="serif">Client Testimonials</h2>
+        <div class="word-grid">
+            <div class="word-card" data-aos="fade-up">
+                <p>"The best wedding photographer in Muzaffarpur. Flute Studio made our wedding look like a movie."</p>
+                <h4>Rohan & Sneha</h4>
+            </div>
+            <div class="word-card" data-aos="fade-up" data-aos-delay="100">
+                <p>"World-class cinematography right here in Bihar. We are in love with our wedding film!"</p>
+                <h4>Armaan & Kiara</h4>
+            </div>
+            <div class="word-card" data-aos="fade-up" data-aos-delay="200">
+                <p>"Truly editorial quality. Their professionalism and vision are unmatched."</p>
+                <h4>Zoya & Kabir</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grand Footer -->
+    <footer class="grand-footer">
+        <div class="f-container">
+            <div class="f-brand">
+                <h2>FLUTE<span> STUDIO</span></h2>
+                <p>Preserving the legacy of love through an elite lens. Based in Muzaffarpur, serving Patna, Darbhanga, and the world.</p>
+                <div class="f-socials" style="margin-top: 25px;">
+                    <a href="https://www.instagram.com/flutestudio__/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@flutestudio9284" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/flutestudiof90/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="f-col">
+                <h4 class="f-title">Information</h4>
+                <ul class="f-links">
+                    <li>The Vision</li>
+                    <li>Portfolio</li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4 class="f-title">Contact</h4>
+                <ul class="f-links">
+                    <li>+91 75439 07502</li>
+                    <li>+91 82100 62234</li>
+                    <li>flutestudioof90@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FLUTE STUDIO | Top Wedding Photography Muzaffarpur</p>
+            <p style="font-family: 'Playfair Display'; font-style: italic; color: var(--gold); font-size: 1rem;">Legacy In Every Frame</p>
+        </div>
+    </footer>
+
+    <!-- Hidden SEO Content -->
+    <div class="seo-hidden">
+        <h2>Expert Wedding Photography in Muzaffarpur and Patna</h2>
+        <p>Looking for the best marriage photographer in Bihar? Flute Studio is a top-rated studio in Muzaffarpur offering premium wedding cinematography, candid photoshoots, and pre-wedding films. We serve all areas including Muzaffarpur Town, Patna, Darbhanga, Samastipur, Motihari, and Sitamarhi. Our team provides professional high-quality 4K cinematic wedding trailers and luxury bridal albums at competitive prices.</p>
+    </div>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/917543907502" class="wa-float">
+        <i class="fab fa-whatsapp" style="color: white; font-size: 1.8rem;"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+        window.addEventListener('load', () => {
+            setTimeout(() => { document.getElementById('intro-shutter').style.transform = 'translateY(-100%)'; }, 2500);
+        });
+        window.onscroll = function() {
+            const nav = document.getElementById('navbar');
+            if (window.pageYOffset > 50) { nav.classList.add('scrolled'); } 
+            else { nav.classList.remove('scrolled'); }
+        };
+    </script>
+</body>
+</html>
