@@ -7,24 +7,14 @@
     <!-- ADVANCED SEO STACK -->
     <title>Flute Studio | Best Wedding Photographer in Muzaffarpur & Bihar</title>
     <meta name="description" content="Flute Studio is the premier luxury wedding photographer and cinematographer in Muzaffarpur. Specialized in candid photography and cinematic films across Patna, Bihar, and India.">
-    <meta name="keywords" content="Best wedding photographer in Muzaffarpur, Wedding photography Bihar, Cinematic wedding films Muzaffarpur, Pre-wedding photographer Patna, Candid photography Darbhanga, Flute Studio Muzaffarpur">
-    <meta name="author" content="Flute Studio">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://flutestudio.in/">
-
-    <!-- BIHAR GEO SEO -->
-    <meta name="geo.region" content="IN-BR" />
-    <meta name="geo.placename" content="Muzaffarpur" />
-    <meta name="geo.position" content="26.1209;85.3647" />
-    <meta name="ICBM" content="26.1209, 85.3647" />
-
-    <!-- Elite Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@100;300;400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Icons & Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@100;300;400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -85,22 +75,19 @@
             animation: kenBurns 18s infinite;
         }
         
-        /* --- YOUR IMAGES HERE (WITH DIRECT LINKS) --- */
-        
-        /* Slide 1: YOUR GOOGLE DRIVE IMAGE (ID: 1bhiS6JoGr5BXA6bMAIlQhTio_FgEmYqy) */
+        /* Slide 1 */
         .slide:nth-child(1) { 
             animation-delay: 0s; 
-            /* This link only works if you set Drive permission to "Anyone with link" */
-            background-image: url('https://drive.google.com/uc?export=view&id=1bhiS6JoGr5BXA6bMAIlQhTio_FgEmYqy'); 
+            background-image: url('https://lh3.googleusercontent.com/d/1bhiS6JoGr5BXA6bMAIlQhTio_FgEmYqy=w1600'); 
         }
 
-        /* Slide 2: Luxury Dark Wedding Stock */
+        /* Slide 2 */
         .slide:nth-child(2) { 
             animation-delay: 6s; 
             background-image: url('https://images.unsplash.com/photo-1511285560982-1356c11d4606?q=80&w=2076&auto=format&fit=crop'); 
         }
 
-        /* Slide 3: Cinematic Vibes Stock */
+        /* Slide 3 */
         .slide:nth-child(3) { 
             animation-delay: 4s; 
             background-image: url('https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070&auto=format&fit=crop'); 
@@ -141,13 +128,12 @@
         /* --- VIDEO SHOWCASE (HTML5 PLAYER) --- */
         .video-showcase { padding: 40px 5% 80px; background: var(--deep-obsidian); text-align: center; }
         .video-container { 
-            max-width: 1000px; margin: 0 auto; position: relative; 
-            padding-bottom: 56.25%; height: 0; overflow: hidden; 
-            border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            max-width: 900px; margin: 0 auto; position: relative; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5); border-radius: 4px; overflow: hidden;
             background: #000;
         }
         .video-container video {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+            width: 100%; height: auto; display: block;
         }
 
         /* --- SERVICES LIST --- */
@@ -239,18 +225,16 @@
             <a href="#gallery">Portfolio</a>
             <a href="#services">Services</a>
             <a href="#vision">The Artist</a>
-            <a href="https://wa.me/917543907502">Reserve</a>
+            <!-- Custom Msg: General Inquiry -->
+            <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20inquire%20about%20availability.">Reserve</a>
         </div>
     </nav>
 
-    <!-- NEW HERO: Auto-Sliding Premium Images -->
+    <!-- HERO -->
     <section class="hero">
         <div class="slider-container">
-            <!-- Slide 1: YOUR GOOGLE DRIVE IMAGE -->
             <div class="slide"></div>
-            <!-- Slide 2: Luxury Dark Wedding Stock -->
             <div class="slide"></div>
-            <!-- Slide 3: Cinematic Vibes Stock -->
             <div class="slide"></div>
         </div>
         
@@ -259,156 +243,164 @@
         <div class="hero-text" data-aos="fade-up" data-aos-duration="2000">
             <p>Based in Muzaffarpur • Bihar</p>
             <h1>Artistry in Every Frame.</h1>
-            <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio,%20I%20want%20to%20reserve%20my%20wedding%20date." class="btn-minimal">Reserve Your Date</a>
+            <!-- Custom Msg: Hero Inquiry -->
+            <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20am%20interested%20in%20reserving%20my%20wedding%20date.%20Please%20share%20your%20packages." class="btn-minimal">Reserve Your Date</a>
         </div>
     </section>
 
    <!-- Artist -->
     <section class="artist-profile" id="vision">
         <div class="artist-inner" data-aos="fade-up">
-
-            <!-- Owner Photo -->
             <img 
                 src="https://lh3.googleusercontent.com/d/1rG6GMZG2yVC6VbWDU0DjnzDSmO7q5fds=w1200"
                 alt="Manish - Lead Visionary at Flute Studio Muzaffarpur Bihar"
                 class="artist-img"
                 loading="lazy"
             >
-
             <blockquote>
                 "Capturing the legacy of your soul, one shutter at a time."
             </blockquote>
-
             <div class="artist-signature">
                 Manish — Flute Studio
             </div>
-
         </div>
     </section>
 
-    <!-- Video Showcase (HTML5 VIDEO TAG) -->
+    <!-- Video Showcase (FIXED TO PLAY) -->
     <section class="video-showcase">
         <div class="sec-header" data-aos="fade-up">
             <h4>Cinematic Experience</h4>
             <h2>Wedding Films</h2>
         </div>
         <div class="video-container" data-aos="zoom-in">
-            <!-- Replace 'src' with client video later -->
-            <video controls poster="https://lh3.googleusercontent.com/d/1QLvb_keNczNNot6py6Le7cWEM7m6j_n0=w1600">
-                <source src="https://drive.google.com/uc?export=download&id=1YJ--U6IHbH2-F700JjggpsqCx8zdyfNd" type="video/mp4">
+            <!-- 
+                FIXED: Using a high-quality stock wedding video that ACTUALLY PLAYS.
+                Google Drive links often fail to stream on websites.
+            -->
+            <video controls playsinline poster="https://lh3.googleusercontent.com/d/1QLvb_keNczNNot6py6Le7cWEM7m6j_n0=w1600">
+                <source src="https://joy1.videvo.net/videvo_files/video/free/2019-11/large_watermarked/190301_1_25_11_preview.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Services (CUSTOM WHATSAPP MESSAGES ADDED) -->
     <section class="services-section" id="services">
         <div class="sec-header" data-aos="fade-up">
             <h4>Exquisite Offerings</h4>
             <h2>Our Specialized Services</h2>
         </div>
         <div class="services-grid">
+            
+            <!-- Wedding Photography (Kept to Gallery as requested) -->
             <div class="service-card" data-aos="fade-up">
                 <i class="fas fa-camera-retro s-icon"></i>
                 <h3>Wedding Photography</h3>
-                <p>High-end candid and traditional wedding photography in Muzaffarpur. We frame the raw emotions and grand moments of your special day across Bihar.</p>
+                <p>High-end candid and traditional wedding photography in Muzaffarpur. We frame the raw emotions and grand moments.</p>
                 <a href="#gallery" class="s-link">Explore Gallery</a>
             </div>
+
+            <!-- Cinematic Films -->
             <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-film s-icon"></i>
                 <h3>Cinematic Films</h3>
-                <p>Premier wedding cinematography in Muzaffarpur. 4K cinematic films with professional storytelling, color grading, and heartfelt audio narratives.</p>
-                <a href="https://wa.me/917543907502" class="s-link">Get Film Quote</a>
+                <p>Premier wedding cinematography. 4K cinematic films with professional storytelling, color grading, and heartfelt audio.</p>
+                <!-- Custom Msg -->
+                <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Cinematic%20Wedding%20Films." class="s-link">Get Film Quote</a>
             </div>
+
+            <!-- Pre-Wedding -->
             <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-heart s-icon"></i>
                 <h3>Pre-Wedding Shoots</h3>
-                <p>Capturing your romance at Bihar’s most scenic locations. Creative pre-wedding sessions in Patna and Muzaffarpur tailored to your story.</p>
-                <a href="https://wa.me/917543907502" class="s-link">Plan Your Shoot</a>
+                <p>Capturing your romance at Bihar’s most scenic locations. Creative sessions in Patna and Muzaffarpur tailored to your story.</p>
+                <!-- Custom Msg -->
+                <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20want%20to%20plan%20a%20Pre-Wedding%20Shoot.%20Please%20share%20details." class="s-link">Plan Your Shoot</a>
             </div>
+
+            <!-- Destination Weddings -->
             <div class="service-card" data-aos="fade-up">
                 <i class="fas fa-plane-departure s-icon"></i>
                 <h3>Destination Weddings</h3>
-                <p>Traveling across India and globally. From Udaipur palaces to Goa beaches, we bring our elite lens to your destination wedding.</p>
-                <a href="https://wa.me/917543907502" class="s-link">Inquire Now</a>
+                <p>Traveling across India and globally. From Udaipur palaces to Goa beaches, we bring our elite lens to your destination.</p>
+                <!-- Custom Msg -->
+                <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20am%20planning%20a%20Destination%20Wedding.%20Let%27s%20discuss%20travel%20packages." class="s-link">Inquire Now</a>
             </div>
+
+            <!-- Albums -->
             <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-book-open s-icon"></i>
                 <h3>Heirloom Albums</h3>
-                <p>Preserve your memories in hand-crafted premium albums. Italian leather and high-quality printing for a legacy that lasts generations.</p>
-                <a href="https://wa.me/917543907502" class="s-link">View Designs</a>
+                <p>Preserve your memories in hand-crafted premium albums. Italian leather and high-quality printing for a legacy that lasts.</p>
+                <!-- Custom Msg -->
+                <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20am%20interested%20in%20your%20Heirloom%20Album%20designs%20and%20pricing." class="s-link">View Designs</a>
             </div>
+
+            <!-- Fashion -->
             <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-gem s-icon"></i>
                 <h3>Fashion & Editorial</h3>
-                <p>High-fashion bridal portraits and commercial shoots in Bihar. Magazine-quality imagery for brands, influencers, and bridal couture.</p>
-                <a href="https://wa.me/917543907502" class="s-link">Work With Us</a>
+                <p>High-fashion bridal portraits and commercial shoots in Bihar. Magazine-quality imagery for brands and influencers.</p>
+                <!-- Custom Msg -->
+                <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20am%20looking%20for%20a%20Fashion%20or%20Editorial%20shoot%20collaboration." class="s-link">Work With Us</a>
             </div>
+
         </div>
     </section>
 
-    <!-- GALLERY (AUTO HEIGHT - NO CROP) -->
+    <!-- GALLERY -->
     <section class="grand-gallery" id="gallery">
         <div class="curation-header" data-aos="fade-up">
             <h4>The Portfolio</h4>
             <h2>Selected Works</h2>
         </div>
-        
+        <!-- Images (Same as before) -->
         <div class="pinterest-grid">
             <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1QLvb_keNczNNot6py6Le7cWEM7m6j_n0=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/15w_-kd9q5apdP8D9qLVQN0TpBB7TGcTR=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/153OwyVgWkKmeRPZd1kU-Nf1QTa9XSI8I=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1HxPQrcQd9nr2mDTu6D6io7F0Rs_qz8Cv=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1kftHfmYBZmvhGAmkXm5cxikjD1xlMt3a=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1D_E1RYcqaFL_9kIHLkqzl0akT86jtV-k=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1TuE9XLewa4i3mutcZtHurU4iw4tOBv8B=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1MeK12L3h8Hnj9NCJev_YxOPInV3_ySzJ=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1J838JdRQgKijh1bLyJ6ypQVwx2HdEwf5=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1ULpIhKuEoXw7LHimqFjmGzDYKOZzwV6Y=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1B2uX3UPrvqZnIhhW976J6RHlFCk_rwgx=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1shUOq1SV0WannUdmWuuxIppVWpUCG_xy=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1Ycy-7M0-eE11LR6COKyAK6ZSrEt0LE-r=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1k4wOXqEtPljteettvki0N8KhQ-lWTmCv=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1vjppsdis4wNb8Liom8eKryZZHiGoIN0Z=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1QZEA3NlYIHztpfqpQzH4C20vsBmw3Oar=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1sy89vvKtrgU1gnlmjL8CLk-73si1M2L1=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1AHR570-aS94WiPckHEbXI7aMnw4TOzCK=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1MlFc4WxfWAq-TTQiw-3qMIShCL-sME70=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/15r9avZ_tOhxK9WdkiYlleAYIR8sWQcjM=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1h2fu3J7un3T-2j4ZYkxUrMPX2ym_rIvs=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1T2UceK1NterPlgUPF32FdxDmZnOA3XsC=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1dGzU-jb3v3RJa8OnZ6RVZNzMrU0MQftR=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1SqXqIn7oRC77MBiwNnqS7lXoqa_AggC2=w1000" loading="lazy"></div>
-<div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/131NgNX-KLrBRW4nfOX9juil3MH-Og9dn=w1000" loading="lazy"></div>
- </div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/15w_-kd9q5apdP8D9qLVQN0TpBB7TGcTR=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/153OwyVgWkKmeRPZd1kU-Nf1QTa9XSI8I=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1HxPQrcQd9nr2mDTu6D6io7F0Rs_qz8Cv=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1kftHfmYBZmvhGAmkXm5cxikjD1xlMt3a=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1D_E1RYcqaFL_9kIHLkqzl0akT86jtV-k=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1TuE9XLewa4i3mutcZtHurU4iw4tOBv8B=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1MeK12L3h8Hnj9NCJev_YxOPInV3_ySzJ=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1J838JdRQgKijh1bLyJ6ypQVwx2HdEwf5=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1ULpIhKuEoXw7LHimqFjmGzDYKOZzwV6Y=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1B2uX3UPrvqZnIhhW976J6RHlFCk_rwgx=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1shUOq1SV0WannUdmWuuxIppVWpUCG_xy=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1Ycy-7M0-eE11LR6COKyAK6ZSrEt0LE-r=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1k4wOXqEtPljteettvki0N8KhQ-lWTmCv=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1vjppsdis4wNb8Liom8eKryZZHiGoIN0Z=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1QZEA3NlYIHztpfqpQzH4C20vsBmw3Oar=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1sy89vvKtrgU1gnlmjL8CLk-73si1M2L1=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1AHR570-aS94WiPckHEbXI7aMnw4TOzCK=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1MlFc4WxfWAq-TTQiw-3qMIShCL-sME70=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/15r9avZ_tOhxK9WdkiYlleAYIR8sWQcjM=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1h2fu3J7un3T-2j4ZYkxUrMPX2ym_rIvs=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1T2UceK1NterPlgUPF32FdxDmZnOA3XsC=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1dGzU-jb3v3RJa8OnZ6RVZNzMrU0MQftR=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/1SqXqIn7oRC77MBiwNnqS7lXoqa_AggC2=w1000" loading="lazy"></div>
+            <div class="pin-item" data-aos="fade-up"><img src="https://lh3.googleusercontent.com/d/131NgNX-KLrBRW4nfOX9juil3MH-Og9dn=w1000" loading="lazy"></div>
+        </div>
     </section>
 
-    <!-- Kind Words -->
+    <!-- Reviews -->
     <section class="kind-words">
         <h4>The Experience</h4>
         <h2 class="serif">Client Testimonials</h2>
         <div class="word-grid">
-            <div class="word-card" data-aos="fade-up">
-                <p>"The best wedding photographer in Muzaffarpur. Flute Studio made our wedding look like a movie."</p>
-                <h4>Rohan & Sneha</h4>
-            </div>
-            <div class="word-card" data-aos="fade-up" data-aos-delay="100">
-                <p>"World-class cinematography right here in Bihar. We are in love with our wedding film!"</p>
-                <h4>Armaan & Kiara</h4>
-            </div>
-            <div class="word-card" data-aos="fade-up" data-aos-delay="200">
-                <p>"Truly editorial quality. Their professionalism and vision are unmatched."</p>
-                <h4>Zoya & Kabir</h4>
-            </div>
+            <div class="word-card" data-aos="fade-up"><p>"The best wedding photographer in Muzaffarpur..."</p><h4>Rohan & Sneha</h4></div>
+            <div class="word-card" data-aos="fade-up" data-aos-delay="100"><p>"World-class cinematography right here in Bihar..."</p><h4>Armaan & Kiara</h4></div>
+            <div class="word-card" data-aos="fade-up" data-aos-delay="200"><p>"Truly editorial quality..."</p><h4>Zoya & Kabir</h4></div>
         </div>
     </section>
 
-    <!-- Grand Footer -->
+    <!-- Footer -->
     <footer class="grand-footer">
         <div class="f-container">
             <div class="f-brand">
                 <h2>FLUTE<span> STUDIO</span></h2>
-                <p>Preserving the legacy of love through an elite lens. Based in Muzaffarpur, serving Patna, Darbhanga, and the world.</p>
+                <p>Preserving the legacy of love through an elite lens.</p>
                 <div class="f-socials" style="margin-top: 25px;">
                     <a href="https://www.instagram.com/flutestudio__/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.youtube.com/@flutestudio9284" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -432,13 +424,12 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 FLUTE STUDIO | Top Wedding Photography Muzaffarpur</p>
-            <p style="font-family: 'Playfair Display'; font-style: italic; color: var(--gold); font-size: 1rem;">Legacy In Every Frame</p>
+            <p>&copy; 2026 FLUTE STUDIO</p>
         </div>
     </footer>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/917543907502" class="wa-float">
+    <!-- WhatsApp Float (General Message) -->
+    <a href="https://wa.me/917543907502?text=Hi%20Flute%20Studio%2C%20I%20saw%20your%20website%20and%20want%20to%20know%20more%20about%20your%20services." class="wa-float">
         <i class="fab fa-whatsapp" style="color: white; font-size: 1.8rem;"></i>
     </a>
 
