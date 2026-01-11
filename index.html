@@ -85,16 +85,26 @@
             animation: kenBurns 18s infinite;
         }
         
-        /* Slide Images */
-       /* Slide 1: Your Original Image */
+        /* --- YOUR IMAGES HERE (WITH DIRECT LINKS) --- */
+        
+        /* Slide 1: YOUR GOOGLE DRIVE IMAGE (ID: 1bhiS6JoGr5BXA6bMAIlQhTio_FgEmYqy) */
         .slide:nth-child(1) { 
             animation-delay: 0s; 
+            /* This link only works if you set Drive permission to "Anyone with link" */
             background-image: url('https://drive.google.com/uc?export=view&id=1bhiS6JoGr5BXA6bMAIlQhTio_FgEmYqy'); 
         }
+
         /* Slide 2: Luxury Dark Wedding Stock */
-        .slide:nth-child(2) { animation-delay: 6s; background-image: url('https://images.unsplash.com/photo-1511285560982-1356c11d4606?q=80&w=2076&auto=format&fit=crop'); }
+        .slide:nth-child(2) { 
+            animation-delay: 6s; 
+            background-image: url('https://images.unsplash.com/photo-1511285560982-1356c11d4606?q=80&w=2076&auto=format&fit=crop'); 
+        }
+
         /* Slide 3: Cinematic Vibes Stock */
-        .slide:nth-child(3) { animation-delay: 12s; background-image: url('https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070&auto=format&fit=crop'); }
+        .slide:nth-child(3) { 
+            animation-delay: 12s; 
+            background-image: url('https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=2070&auto=format&fit=crop'); 
+        }
 
         @keyframes kenBurns {
             0% { opacity: 0; transform: scale(1); }
@@ -104,7 +114,7 @@
             100% { opacity: 0; }
         }
 
-        .hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: 1; }
+        .hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); z-index: 1; }
         
         .hero-text { position: relative; z-index: 2; padding: 0 20px; }
         .hero-text h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); color: var(--white); margin-bottom: 5px; font-weight: 400; letter-spacing: -1px; text-shadow: 0 10px 30px rgba(0,0,0,0.8); }
@@ -236,11 +246,11 @@
     <!-- NEW HERO: Auto-Sliding Premium Images -->
     <section class="hero">
         <div class="slider-container">
-            <!-- Slide 1: Your Original Couple -->
+            <!-- Slide 1: YOUR GOOGLE DRIVE IMAGE -->
             <div class="slide"></div>
-            <!-- Slide 2: Cinematic Indian Wedding -->
+            <!-- Slide 2: Luxury Dark Wedding Stock -->
             <div class="slide"></div>
-            <!-- Slide 3: Luxury Details -->
+            <!-- Slide 3: Cinematic Vibes Stock -->
             <div class="slide"></div>
         </div>
         
@@ -257,7 +267,7 @@
     <section class="artist-profile" id="vision">
         <div class="artist-inner" data-aos="fade-up">
 
-            <!-- Owner Photo (Corrected Size & Centered) -->
+            <!-- Owner Photo -->
             <img 
                 src="https://lh3.googleusercontent.com/d/1rG6GMZG2yVC6VbWDU0DjnzDSmO7q5fds=w1200"
                 alt="Manish - Lead Visionary at Flute Studio Muzaffarpur Bihar"
